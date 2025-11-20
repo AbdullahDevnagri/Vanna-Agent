@@ -2,6 +2,9 @@ Vanna AI Agent
 <img width="1260" height="826" alt="second" src="https://github.com/user-attachments/assets/b44895a0-e99f-4d08-84ab-45728dc8738c" />
 <img width="1860" height="657" alt="sql queries" src="https://github.com/user-attachments/assets/0b313231-9628-455c-a6a9-fd7f742354a6" />
 
+https://github.com/user-attachments/assets/ff388261-825f-47f1-a601-066fe0e89651
+
+
 A production-ready AI-powered application that converts natural language questions into SQL queries using Google Gemini LLM. The system enables users to query company layoff data through conversational interfaces without writing SQL.
 
 Features
