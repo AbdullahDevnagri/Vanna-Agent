@@ -1,0 +1,11 @@
+vanna==2.0.0rc1      
+google-genai        
+duckdb
+chromadb
+flask
+python-dotenv
+pandas
+sqlalchemy      
+uvicorn
+requests
+rich
