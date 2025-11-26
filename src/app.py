@@ -6,8 +6,6 @@ import time
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-from flask import Flask, request, jsonify
-
 from vanna.integrations.google import GeminiLlmService
 
 from vanna import Agent
@@ -21,13 +19,16 @@ from vanna.integrations.chromadb import ChromaAgentMemory
 
 from vanna.core.user import UserResolver, User, RequestContext
 
-from vanna.servers.flask import VannaFlaskServer
+from vanna.servers.fastapi import VannaFastAPIServer
 from vanna.core.system_prompt import DefaultSystemPromptBuilder
 from vanna.core.lifecycle import LifecycleHook
 from config import settings
 
 import asyncio
 import duckdb
+import uvicorn
+
+from chromadb.utils.embedding_functions import ONNXMiniLM_L6_V2
 
 SCHEMA_REFERENCE = textwrap.dedent(
     f"""
@@ -53,19 +54,24 @@ SCHEMA_REFERENCE = textwrap.dedent(
     """
 ).strip()
 
-
 class NissanSystemPromptBuilder(DefaultSystemPromptBuilder):
+    _cached_prompt = None 
+
     def __init__(self, dataset_doc: str):
         super().__init__()
         self.dataset_doc = dataset_doc
 
     async def build_system_prompt(self, user, tools):
-        base_prompt = await super().build_system_prompt(user, tools) or ""
-        return f"{base_prompt}\n\n{self.dataset_doc}"
+        # If already built once reuse it
+        if self._cached_prompt is not None:
+            return self._cached_prompt
 
+        base_prompt = await super().build_system_prompt(user, tools) or ""
+
+        self._cached_prompt = f"{base_prompt}\n\n{self.dataset_doc}"
+        return self._cached_prompt
 
 system_prompt_builder = NissanSystemPromptBuilder(SCHEMA_REFERENCE)
-
 
 class LatencyLoggingHook(LifecycleHook):
     """Logs end-to-end latency for each user question."""
@@ -96,9 +102,8 @@ class LatencyLoggingHook(LifecycleHook):
 
 latency_hook = LatencyLoggingHook()
 
-
 llm = GeminiLlmService(
-    model="gemini-2.5-flash",
+    model="gemini-2.0-flash-lite",
     api_key=settings.GEMINI_API_KEY
 )
 
@@ -147,10 +152,14 @@ def ingest_csv():
 db_runner = DuckDBRunner(database_path=settings.DUCKDB_PATH)
 db_tool = RunSqlTool(sql_runner=db_runner)
 
+# Stop Reloading ONNX Model
+embedding_fn = ONNXMiniLM_L6_V2() 
+
 # Agent memory using ChromaDB (local vector database) - Agent to learn from past interactions by storing successful question-SQL pair
 agent_memory = ChromaAgentMemory(
     collection_name="vanna_memory",
-    persist_directory=settings.CHROMA_PERSIST_DIR
+    persist_directory=settings.CHROMA_PERSIST_DIR,
+    embedding_function=embedding_fn
 )
 
 # Tools registry
@@ -180,13 +189,27 @@ agent = Agent(
     lifecycle_hooks=[latency_hook]
 )
 
-# Create Flask server
-server = VannaFlaskServer(agent)
+agent.max_iterations = 1 
+agent.enhancer = None
+
+# Create FastAPI server wrapper
+fastapi_server = VannaFastAPIServer(agent)
+
+
+def create_app():
+    """Expose FastAPI app instance (for uvicorn/gunicorn)."""
+    return fastapi_server.create_app()
+
 
 def run_server():
-    """Run Flask server"""
-    logger.info("Starting Vanna Flask server...")
-    server.run(host=settings.FLASK_HOST, port=settings.FLASK_PORT)
+    """Run FastAPI server with uvicorn."""
+    logger.info("Starting Vanna FastAPI server...")
+    uvicorn.run(
+        create_app(),
+        host=settings.FLASK_HOST,
+        port=settings.FLASK_PORT,
+        log_level="info",
+    )
 
 if __name__ == "__main__":
     logger.info("Ingesting CSV before starting server...")
