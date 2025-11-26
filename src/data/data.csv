@@ -1,265 +1,139 @@
-State,Company,City,Number of Workers,WARN Received Date,Effective Date,Closure / Layoff,Temporary/Permanent,Union,Region,County,Industry,Notes
-California,Safeway,Hayward,76,11/05/2025,02/02/2026,Closure Permanent,,,,Alameda County,44-45 Retail Trade,231 W. Jackson Street  Hayward CA 94544
-Connecticut,Balducci’s Store 3610,Westport,59,10/24/2025,02/28/2026,Closure,,,,,,
-North Carolina,Safeway Logistics LLC,Kinston,72,10/01/2025,11/22/2025,Layoff,Permanent,,,Lenoir,,
-Colorado,Safeway Inc. Store 0017,,62,09/09/2025,11/07/2025,Closure,,,Arapahoe/Douglas,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 0137,,61,09/09/2025,11/07/2025,Closure,,,Arapahoe/Douglas,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 0862,,54,09/09/2025,11/07/2025,Closure,,,Larimer,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 0881,,64,09/09/2025,11/07/2025,Closure,,,Adams,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 1038,,65,09/09/2025,11/07/2025,Closure,,,Denver,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 2915,,50,09/09/2025,11/07/2025,Closure,,,Larimer,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 3723,,60,09/09/2025,11/07/2025,Closure,,,Rural Consortium,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 0835,,63,09/09/2025,11/07/2025,Closure,,,Pikes Peak,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 1721,,53,09/09/2025,11/07/2025,Closure,,,Rural Consortium,,"44,5110: Supermarkets and Other Grocery",
-Colorado,Safeway Inc. Store 1792,,85,09/09/2025,11/07/2025,Closure,,,Pikes Peak,,"44,5110: Supermarkets and Other Grocery",
-Nebraska,Safeway Store 2563,Chadron,49,09/09/2025,11/07/2025,Closure,Permanent,UFCW Local 304a,,,,
-Arizona,Albertson's Companies,Phoenix,150,09/05/2025,,,,,5,,,"20427 N 27th Ave Phoenix, Arizona 85027"
-Pennsylvania,HMS Host (Philadelphia International Airport); Starbucks and Balducci's,Philadelphia,13,09/01/2025,10/27/2025,Layoff,,,,Philadelphia,,
-California,The Vons Companies Inc.,Los Angeles,54,08/15/2025,10/16/2025,Closure Temporary,,,,Los Angeles County,44-45 Retail Trade,3118 S. Sepulveda Blvd.  Los Angeles CA 90034
-Connecticut,ACME Market,Greenwich,56,08/04/2025,10/09/2025,Closure,,UFCW Local 371,,,,
-California,Safeway Inc.,Santa Rosa,3,06/20/2025,07/31/2025,Closure Permanent,,,,Sonoma County,44-45 Retail Trade,2785 Yulupa Ave  Santa Rosa CA 95405
-Louisiana,Albertsons Baton Rouge #0709,Baton Rouge,90,06/11/2025,08/16/2025,,,,,,Food and Beverage,
-Texas,Tom Thumb Store #3645 Plano,Plano,75,06/11/2025,07/26/2025,,,,North Central Texas WDA,Collin,,
-Texas,Randalls Store #1041,Houston,102,06/11/2025,08/16/2025,,,,Gulf Coast WDA,Harris,,
-Oregon,Safeway Albertsons 0505 - Portland Division,Portland,87,05/07/2025,07/01/2025,Large Layoff - 10 or more workers,,UFCW Local 555; BCTGM Local 114,,,,9230
-Texas,Tom Thumb Store #3579,Allen,75,05/06/2025,,,,,North Central Texas WDA,Collin,,
-Oregon,Safeway Albertsons 4381 - Portland Division,Baker City,82,03/26/2025,05/25/2025,Permanent Closure,,UFCW Local 3000; UFCW Local 555,,,,9204
-California,Safeway,Vallejo,95,02/12/2025,04/11/2025,Closure Permanent,,,,Solano County,44-45 Retail Trade,774 Admiral Callaghan Lane  Vallejo CA 94591
-California,Safeway,Pinole,69,02/04/2025,04/04/2025,Closure Permanent,,,,Contra Costa County,44-45 Retail Trade,1421 Tara Hill Drive  Pinole CA 94564
-Maryland,Safeway Store 3257,Rockville,85,01/31/2025,04/05/2025,Plant Closure,,,Montgomery County,,445110,"1800 Rockville Pike Rockville, MD 20852"
-California,Safeway Inc.,Pleasanton,138,01/15/2025,02/22/2025,Layoff Permanent,,,,Alameda County,44-45 Retail Trade,1115 Dublin Canyon Road Pleasanton CA 94588
-California,Safeway Inc.,Pleasanton,18,01/15/2025,02/22/2025,Layoff Permanent,,,,Alameda County,44-45 Retail Trade,5918 Stoneridge Mall Road Pleasanton CA 94588
-Arizona,"Safeway, Inc.",Phoenix,225,01/14/2025,,,,,5,,,"20427 N. 27th Ave Phoenix, Arizona 85027"
-California,Safeway Inc.,San Jose,8,01/08/2025,02/20/2025,Layoff Permanent,,,,Santa Clara County,44-45 Retail Trade,6100 Hellyer Ave. #100 San Jose CA 95138
-California,Safeway,San Francisco,112,12/10/2024,02/07/2025,Closure Permanent,,,,San Francisco County,44-45 Retail Trade,1335 Webster St.  San Francisco CA 94115
-Oregon,Albertsons Store 0515,Portland,87,12/10/2024,02/07/2025,Permanent Closure,,"UFCW Local 555, BCTGM Local 114",,,,9057
-California,The Vons Companies Inc.,Long Beach,87,12/04/2024,02/08/2025,Closure Permanent,,,,Los Angeles County,44-45 Retail Trade,4550 Atlantic Ave  Long Beach CA 90807
-New Jersey,Acme Markets,Chatham,61,06/01/2024,09/01/2024,,,,,,,
-California,Safeway,San Francisco,111,01/30/2024,01/01/2025,Closure Permanent,,,,San Francisco County,,1335 Webster Street San Francisco CA 94115
-California,Safeway,San Francisco,111,01/30/2024,01/01/2025,Closure Permanent,,,,San Francisco County,,1335 Webster Street San Francisco CA 94115
-Texas,Tom Thumb Store #3854,Grapevine,71,01/09/2024,02/17/2024,,,,Tarrant County WDA,Tarrant,,
-Texas,Randalls #2490,Austin,76,01/04/2024,02/10/2024,,,,Capital Area WDA,Travis,,
-Texas,Randalls #2490,Austin,76,01/04/2024,02/10/2024,,,,Capital Area WDA,Travis,,
-New Jersey,ACME Markets Inc.,Milltown,70,01/01/2024,04/01/2024,,,,,,,
-California,Safeway,Santa Clara,38,10/13/2023,11/03/2023,Closure Permanent,,,,Santa Clara County,,3071 Stevens Creek Blvd. Santa Clara CA 95050
-California,The Vons Companies Inc.,Pasadena,53,09/27/2023,09/16/2023,Closure Permanent,,,,Los Angeles County,,1129 S. Fair Oaks Avenue South Pasadena CA 91030
-California,Safeway,San Francisco,65,04/26/2023,06/15/2023,Closure Permanent,,,,San Francisco County,,350 Bay Street San Francisco CA 94133
-California,The Vons Companies Inc.,Santa Monica,83,01/12/2023,02/25/2023,Closure Permanent,,,,Los Angeles County,,710 Broadway Santa Monica CA 90401
-California,Albertson's Santa Fe Springs Pharmacy,Santa Fe Springs,21,09/29/2022,12/02/2022,Closure Permanent,,,,Los Angeles County,,12874 Florence Avenue Santa Fe Springs CA 90670
-California,The Vons Companies Inc.,Vista,45,06/08/2022,06/26/2022,Closure Permanent,,,,San Diego County,,940 S. Santa Fe Avenue Vista CA 92084
-California,Albertsons LLC,Carson,67,04/20/2022,06/16/2022,Closure Permanent,,,,Los Angeles County,,110 E. Carson St. Carson CA 90745
-California,Vons Companies; Norwalk Beverage Plant,Norwalk,69,04/13/2022,06/12/2022,Layoff Permanent,,,,Los Angeles County,,12844 Excelsior Dr. Norwalk CA 90650
-California,Vons Companies Inc.,Lompoc,118,03/10/2021,05/10/2021,Closure Permanent,,,,Santa Barbara County,,
-Texas,Albertsons #3064,Bellaire,67,01/08/2021,02/20/2021,,,,Gulf Coast WDA,Harris,,
-Texas,Tom Thumb #2574,Ft. Worth,11,12/08/2020,02/27/2021,,,,Tarrant County WDA,Tarrant,,
-Texas,Tom Thumb #2642,Dallas,17,12/08/2020,02/27/2021,,,,Dallas County WDA,Dallas,,
-Texas,Tom Thumb #1788,Plano,17,12/08/2020,02/27/2021,,,,North Central Texas WDA,Collin,,
-Texas,Tom Thumb #1786,Grand Prairie,16,12/08/2020,02/27/2021,,,,Dallas County WDA,Dallas,,
-Texas,Tom Thumb #2578,Garland,10,12/08/2020,02/27/2021,,,,Dallas County WDA,Dallas,,
-Texas,Tom Thumb #3658,Arlington,16,12/08/2020,02/27/2021,,,,Tarrant County WDA,Tarrant,,
-Texas,Tom Thumb #1781,Coppell,10,12/08/2020,02/27/2021,,,,Dallas County WDA,Dallas,,
-California,Albertsons Companies Inc,Union City,193,11/18/2019,12/13/2019,Closure Unknown at this time,,,,Alameda County,,
-Pennsylvania,Albertsons Companies Plated Fulfillment Center,Hatfield,56,11/01/2019,11/27/2019,Closure,,,,Montgomery,,
-Arizona,Safeway #2676,Mesa,65,10/18/2019,,,,,7,,,
-Arizona,Albertsons 2929,Gilbert,99,06/21/2019,,,,,7,,,
-Arizona,Safeway 1126,Scottsdale,60,06/21/2019,,,,,7,,,
-Texas,Albertsons #3933,El Paso,90,06/21/2019,08/03/2019,,,,Borderplexjobs WDA,El Paso,,
-Arizona,Albertsons/Safeway 0940,Tempe,60,04/26/2019,,,,,7,,,
-Arizona,Safeway 1567,Mesa,54,04/26/2019,,,,,7,,,
-California,Vons Companies Inc.,Barstow,65,03/25/2019,05/24/2019,Closure Permanent,,,,San Bernardino,,
-Arizona,Safeway #1985,Tucson,62,01/04/2019,,,,,6,,,
-Florida,Safeway,Statewide,452,07/11/2018,08/28/2018,,,,,,Retail Trade,
-Arizona,Albertsons Store 959,Tucson,54,06/18/2018,,,,,6,,,
-Arizona,Safeway 1636,Glendale,61,06/18/2018,,,,,7,,,
-Arizona,Safeway 1202,Phoenix,55,06/18/2018,,,,,5,,,
-Arizona,Albertsons,Phoenix,76,01/05/2018,,,,,5,,,
-California,"Vons Companies, Inc.",El Monte,142,09/14/2017,11/10/2017,Closure Permanent,,,,Los Angeles,,
-California,"Vons Companies, Inc.",Mira Loma,40,09/13/2017,11/10/2017,Closure Permanent,,,,Riverside County,,
-Louisiana,Albertson's #4220,Bossier City,76,07/27/2017,09/09/2017,,,,,,Grocery,
-Louisiana,Albertson's #4038,Denham Springs,81,07/27/2017,09/09/2017,,,,,,Grocery,
-Texas,Albertsons #3571,Ft. Worth,61,07/27/2017,09/02/2017,,,,Tarrant County WDA,Tarrant,,
-Texas,Randalls-Houston Distribution Center,Houston,199,05/16/2017,05/22/2017,,,,Gulf Coast WDA,Harris,,
-Texas,Randalls-Houston Division,Houston,134,05/16/2017,06/17/2017,,,,Gulf Coast WDA,Harris,,
-Colorado,Albertsons Store #1886,,72,03/20/2017,,Closure,,,Mesa,,,
-Texas,Albertsons #4193,Watauga,73,01/11/2017,02/18/2017,,,,Tarrant County WDA,Tarrant,,
-Arizona,Albertson Company #1026,Surprise,77,01/06/2017,,,,,7,,,
-Arizona,Albertson Company #969,Scottsdale,77,01/06/2017,,,,,7,,,
-California,Safeway Inc.,Pleasanton,1,08/23/2016,10/21/2016,Layoff Unknown at this time,,,,,,
-Maryland,"Safeway, Inc.",,75,08/22/2016,10/22/2016,Plant Closure,,,8,,,"14100 Baltimore Ave, Laurel, MD 20707"
-Oregon,Safeway,Clackamas,57,08/16/2016,10/16/2016,Permanent closure,,,,,,2098
-California,Safeway Inc.,Pleasanton,5,07/18/2016,09/16/2016,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Pleasanton,3,06/13/2016,08/12/2016,Layoff Unknown at this time,,,,,,
-California,Safeway Inc. / Albertsons Companies,Pleasanton,5,05/31/2016,07/29/2016,Layoff Unknown at this time,,,,,,
-Maryland,"Safeway, Inc",,94,05/05/2016,07/02/2016,Plant Closure,,,8,,,"6300 Central Avenue, Seat Pleasant, MD 20743"
-Maryland,"Safeway, Inc",,70,05/05/2016,07/02/2016,Plant Closure,,,7,,,"1902 Vier Mills Road, Rockville, MD 20851"
-New Mexico,Albertsons Food Store,Rio Rancho,81,04/15/2016,06/18/2016,,,,Central Region Workforce,Sandoval,,
-California,Safeway Inc. / Albertsons Companies,Pleasanton,3,04/05/2016,06/03/2016,Layoff Unknown at this time,,,,,,
-Maryland,Safeway,,25,03/30/2016,05/30/2016,Plant Closure,,,7,,,"13814 Outlet Drive, Silver Spring, MD 20904"
-Oregon,Haggen Food & Pharmacy,Oregon City,70,03/11/2016,05/11/2016,Permanent closure,,,,,,2083
-Washington,Haggen Food & Pharmacy,Puyallup,78,03/11/2016,05/10/2016,Closure,Permanent,,,,,
-Washington,Haggen Food & Pharmacy,Port Angeles,67,03/11/2016,05/10/2016,Closure,Permanent,,,,,
-Oregon,Haggen Food & Pharmacy,West Linn,68,03/09/2016,05/09/2016,Permanent closure,,,,,,2082
-Oregon,Haggen Food & Pharmacy,Clackamas,70,03/09/2016,05/09/2016,Permanent closure,,,,,,2082
-Washington,Haggen Food & Pharmacy,Federal Way,71,03/09/2016,05/09/2016,Closure,Permanent,,,,,
-Washington,Haggen Food & Pharmacy,Burien,54,03/09/2016,05/09/2016,Closure,Permanent,,,,,
-Washington,Albertson's LLC,Bellingham,65,03/07/2016,05/07/2016,Closure,Permanent,,,,,
-California,Albertsons Companies,Pleasanton,24,02/08/2016,04/08/2016,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Pleasanton,7,01/12/2016,03/11/2016,Layoff Unknown at this time,,,,,,
-Washington,Haggen Food & Pharmacy,Puyallup,87,01/08/2016,03/08/2016,Closure,Permanent,,,,,
-Colorado,Safeway,,98,01/04/2016,,Closure,,,Denver,,,
-California,"Safeway, Inc.",Pleasanton,33,12/22/2015,02/12/2016,Layoff Unknown at this time,,,,,,
-California,"Safeway, Inc.",Pleasanton,33,12/14/2015,02/12/2016,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Pleasanton,7,11/23/2015,01/22/2016,Layoff Unknown at this time,,,,,,
-California,"Safeway, Inc.",Pleasanton,23,10/30/2015,12/31/2015,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Pleasanton,15,09/28/2015,11/20/2015,Layoff Unknown at this time,,,,,,
-California,"Safeway, Inc.",Pleasanton,4,09/28/2015,11/27/2015,Layoff Unknown at this time,,,,,,
-Oregon,Haggen Food & Pharmacy,"Bellingham, WA",416,09/25/2015,11/24/2015,Permanent closure,,,,,,2066
-Washington,Haggen Food & Pharmacy,Statewide,1073,09/25/2015,11/24/2015,Closure,Permanent,,,,,
-California,Safeway Inc.,Pleasanton,5,08/31/2015,10/30/2015,Layoff Unknown at this time,,,,,,
-California,Safeway,Walnut Creek,63,08/21/2015,10/19/2015,Closure Permanent,,,,,,
-California,"Haggen, Inc.",San Ysidro,231,08/18/2015,10/13/2015,Closure Permanent,,,,,,
-California,"Haggen, Inc. (Store #2208)",Bakersfield,36,08/18/2015,10/13/2015,Closure Permanent,,,,,,
-California,"Haggen, Inc. (Store #2210)",Los Osos,24,08/18/2015,10/13/2015,Closure Permanent,,,,,,
-California,"Haggen, Inc.",Tustin,157,08/17/2015,10/13/2015,Closure Permanent,,,,,,
-California,"Haggen, Inc.",Simi Valley,101,08/17/2015,10/13/2015,Closure Permanent,,,,,,
-California,"Haggen, Inc. (Store #2154)",Newbury Park,38,08/17/2015,10/13/2015,Closure Permanent,,,,,,
-California,"Haggen, Inc. (Store #2213)",Santa Clarita,33,08/17/2015,10/13/2015,Closure Permanent,,,,,,
-Arizona,"Haggen, Inc.",Irvine,51,08/14/2015,,,,,6,,,
-Arizona,"Haggen, Inc.",Irvine,35,08/14/2015,,,,,6,,,
-Arizona,"Haggen, Inc.",Irvine,45,08/14/2015,,,,,7,,,
-Arizona,"Haggen, Inc.",Irvine,44,08/14/2015,,,,,10,,,
-Arizona,"Haggen, Inc.",Irvine,51,08/14/2015,,,,,12,,,
-Oregon,Haggen Food and Pharmacy,"Bellingham, WA",331,08/14/2015,10/14/2015,Permanent closure,,,,,,2065
-Washington,Haggen Food & Pharmacy,Spanaway,62,08/14/2015,10/13/2015,Closure,Permanent,,,,,
-California,"Safeway, Inc.",Pleasanton,37,08/10/2015,10/09/2015,Layoff Unknown at this time,,,,,,
-California,"Safeway, Inc.",Pleasanton,37,07/27/2015,09/25/2015,Layoff Unknown at this time,,,,,,
-California,"Safeway, Inc.",Pleasanton,14,07/21/2015,09/18/2015,Layoff Unknown at this time,,,,,,
-California,"Safeway, Inc.",Pleasanton,18,06/30/2015,08/28/2015,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Pleasanton,8,06/08/2015,08/07/2015,Layoff Unknown at this time,,,,,,
-Colorado,Albertsons #632,,38,06/04/2015,,Closure,,,Mesa County,,,
-California,Safeway Inc.,Pleasanton,28,05/18/2015,07/17/2015,Layoff Unknown at this time,,,,,,
-Texas,Albertsons #2587,Arlington,45,05/15/2015,06/20/2015,,,,Tarrant County WDA,Tarrant,,
-California,"Vons Companies, Inc.",Fresno,73,05/12/2015,07/10/2015,Layoff Unknown at this time,,,,,,
-California,"Vons Companies, Inc.",Fresno,54,05/12/2015,07/10/2015,Layoff Unknown at this time,,,,,,
-California,Vons Companies Inc.,Fresno,73,05/08/2015,07/10/2015,Layoff Permanent,,,,,,
-Arizona,Safeway,Phoenix,44,05/04/2015,,,,,2,,,
-Arizona,Safeway,Phoenix,50,05/04/2015,,,,,7,,,
-California,Safeway Inc.,Pleasanton,20,04/27/2015,06/26/2015,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Dublin,1,04/27/2015,06/26/2015,Layoff Unknown at this time,,,,,,
-Florida,Albertsons Store #4301,Clearwater,86,04/20/2015,05/28/2015,,,,,,Retail Trade,
-California,Vons Companies Inc.,Riverside,61,04/14/2015,05/16/2015,Closure Permanent,,,,,,
-California,Vons Companies Inc.,Bakersfield,56,04/14/2015,05/16/2015,Closure Permanent,,,,,,
-California,Safeway Inc.,Pleasanton,96,04/13/2015,06/12/2015,Layoff Unknown at this time,,,,,,
-Colorado,Albertsons #8584,,78,03/24/2015,,Closure,,,Pikes Peak/Teller,,,
-California,Safeway Inc.,Pleasanton,72,03/23/2015,05/22/2015,Layoff Permanent,,,,,,
-California,Safeway Inc.,Pleasanton,113,03/09/2015,05/08/2015,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Pleasanton,129,02/25/2015,04/24/2015,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,Dublin,3,02/25/2015,04/24/2015,Layoff Unknown at this time,,,,,,
-California,Safeway Inc.,West Sacramento,213,02/23/2015,04/25/2015,Closure Unknown at this time,,,,,,
-California,"Safeway, Inc. Corporate Headquarters",Pleasanton,18,01/30/2015,03/31/2015,Layoff Unknown at this time,,,,,,
-Oregon,Safeway Inc.,Clackamas,91,01/29/2015,03/31/2015,Permanent closure,,,,,,2039
-California,Albertson's LLC,Marina Del Rey,80,01/20/2015,02/26/2015,Closure Permanent,,,,,,
-California,"Albertson's, LLC",San Diego,63,01/20/2015,02/26/2015,Closure Permanent,,,,,,
-California,Vons Companies Inc.,Arcadia,168,01/16/2015,03/18/2015,Closure Permanent,,,,,,
-Louisiana,Albertson's Store #2814,Mandeville,83,01/06/2015,02/17/2015,,,,,,Supermarkets and Other Grocery (except Convenience) Stores,
-California,Safeway Inc. Corporate Headquarters,Pleasanton,26,12/26/2014,02/13/2015,Layoff Unknown at this time,,,,,,
-California,"Albertson's, LLC",Hawthorne,78,10/08/2014,11/06/2014,Closure Permanent,,,,,,
-California,"Albertson's, LLC",Chula Vista,66,02/20/2014,,,,,,,,
-California,"Albertson's, LLC",Long Beach,75,02/20/2014,,,,,,,,
-California,"Albertson's, LLC",Monrovia,67,02/20/2014,,,,,,,,
-California,"Albertson's, LLC",Moorpark,66,02/20/2014,,,,,,,,
-California,"Albertson's, LLC",Ontario,74,02/20/2014,,,,,,,,
-California,"Albertson's, LLC",San Diego,92,02/20/2014,,,,,,,,
-California,"Albertson's, LLC",Woodland Hills,71,02/20/2014,,,,,,,,
-Arizona,Albertsons LLC,Tolleson,68,01/13/2014,,,,,7,,,
-Idaho,Albertson's,Burley,40,01/02/2014,02/06/2014,,,,,,,
-California,Albertsons,Long Beach,62,02/10/2013,,,,,,,,
-California,Albertsons,Santa Monica,56,02/06/2013,,,,,,,,
-California,Albertsons Store No: 6134,Garden Grove,61,11/04/2012,,,,,,,,
-California,Albertsons Store No: 6389,Van Nuys,69,11/04/2012,,,,,,,,
-California,Albertsons Store No: 6530,Victorville,62,11/04/2012,,,,,,,,
-California,Albertsons Store No: 6535,Moreno Valley,57,11/04/2012,,,,,,,,
-California,Albertsons Store No: 6537,Rowland Heights,61,11/04/2012,,,,,,,,
-California,Albertsons Store No: 6548,Ontario,52,11/04/2012,,,,,,,,
-California,Albertsons Store No: 6588,Walnut,55,11/04/2012,,,,,,,,
-California,Albertsons Store No: 6597,Covina,61,11/04/2012,,,,,,,,
-California,Albertsons Store No:6576,Riverside,59,11/04/2012,,,,,,,,
-California,Albertsons Store No:6580,Hacienda Heights,57,11/04/2012,,,,,,,,
-Indiana,Jewel-Osco Store,Michigan City,121,08/09/2012,10/08/2012,Closure,,,,,445110,Supermarkets and Other Grocery (except Convenience) Stores
-Florida,Albertson's Store #4346,Venice,87,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4353,Longwood,83,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4354,Bradenton,77,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4357,Vero Beach,74,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4363,Lake Mary,101,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4376,Winter Springs,86,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4436,Valrico,83,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4463,Orlando,80,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4465,Sarasota,90,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4466,Port St. Lucie,90,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4485,Key West,119,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4498,Apopka,80,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Albertson's Store #4359,Apopka,80,04/10/2012,06/10/2012-06/14/2012,,,,,,Retail Trade,
-Florida,Plant City Distribution Center Operations (Albertson's),Plant City,60,04/10/2012,06/10/2012-06/14/2012,,,,,,Transportation and Warehousing,
-California,"Albertson's, Inc.",Fullerton,3,01/09/2012,,,,,,,,
-California,"Albertson's, Inc.",La Habra,2,01/09/2012,,,,,,,,
-California,"Albertson's, Inc.",Murrieta,5,01/09/2012,,,,,,,,
-California,"Albertson's, Inc.",Palmdale,3,01/09/2012,,,,,,,,
-California,"Albertson's, Inc.",Rancho Cucamonga,5,01/09/2012,,,,,,,,
-California,"Albertson's, Inc.",Ridgecrest,6,01/09/2012,,,,,,,,
-California,"Albertson's, Inc.",Tehachapi,6,01/09/2012,,,,,,,,
-Arizona,Albertson's Store #968,Casa Grande,73,01/06/2012,,,,,2,,,
-California,Andronico's Community Market,Los Altos,87,10/21/2011,,,,,,,,
-California,Andronico's Community Market,Berkeley,46,10/21/2011,,,,,,,,
-California,Andronico's Community Market,Berkeley,24,10/21/2011,,,,,,,,
-California,Andronico's Community Market,Berkeley,56,10/21/2011,,,,,,,,
-California,Andronico's Community Market,Berkeley,80,10/21/2011,,,,,,,,
-California,Andronico's Community Market,San Anselmo,43,10/21/2011,,,,,,,,
-California,Andronico's Community Market,San Francisco,90,10/21/2011,,,,,,,,
-Florida,Albertson's Store #4314,Gainesville,88,08/31/2011,10/19/2011,,,,,,Retail Trade,
-Florida,Albertson's Store #4326,Tampa,78,08/31/2011,10/19/2011,,,,,,Retail Trade,
-Florida,Albertson's Store #4373,Mount Dora,76,08/31/2011,10/19/2011,,,,,,Retail Trade,
-California,Albertsons,Coachella,72,05/17/2011,,,,,,,,
-California,Albertsons,Covina,71,05/17/2011,,,,,,,,
-California,Albertson's Store No. 6383,Granada Hills,66,02/24/2011,,,,,,,,
-California,Albertson's Store No. 6544,Ponoma,65,02/24/2011,,,,,,,,
-California,Albertson's Store No.6791,Menifee,73,02/24/2011,,,,,,,,
-Oregon,"Haggen, Murray Hill Store",Beaverton,72,02/22/2011,04/27/2011,Permanent closure,,,,,,1871
-California,"Albertson's, Inc.",Carson,4,01/09/2011,,,,,,,,
-California,Albertsons',Oxnard,86,10/15/2010,,,,,,,,
-California,Albertsons',Palmdale,66,10/15/2010,,,,,,,,
-California,Albertsons' Newport Beach,Newport Beach,67,08/19/2010,,,,,,,,
-Florida,Albertsons,Loxahatchee,85,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons,Boca Raton,91,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons,Melbourne,89,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons,Sanford,93,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons,Lake Worth,88,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons,Delray Beach,87,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons,Oviedo,90,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons,Pembroke Pines,88,01/08/2010,02/01/2010,,,,,,Retail Trade,
-Florida,Albertsons LLC,Kissimmee,85,11/09/2009,12/31/2009,,,,,,Retail Trade,
-Florida,Albertsons LLC,Orlando,80,11/09/2009,12/31/2009,,,,,,Retail Trade,
-Florida,Albertsons LLC,Orlando,81,11/09/2009,12/31/2009,,,,,,Retail Trade,
-Florida,Albertson's LLC,Riverview,80,08/21/2009,10/22/2009,,,,,,Retail Trade,
-Florida,Albertson's LLC,Estero,134,08/21/2009,10/21/2009,,,,,,Retail Trade,
-Florida,Albertson's LLC,Lake Worth,74,08/21/2009,10/22/2009,,,,,,Retail Trade,
-Florida,"Albertsons, LLC",Winter Park,78,06/08/2009,08/05/2009-08/18/2009,,,,,,Retail Trade,
-Florida,Albertson's LLC,Tallahassee,110,01/16/2009,02/27/2009,,,,,,Retail Trade,
-Florida,Albertson's LLC,Ocala,107,01/16/2009,01/18/2009,,,,,,Retail Trade,
-Florida,Albertson's LLC,Orlando,77,01/16/2009,02/22/2009-02/26/2009,,,,,,Retail Trade,
-Florida,Albertson's LLC,West Palm Beach,87,01/16/2009,03/18/2009,,,,,,Retail Trade,
-Florida,Albertsons,Tallahassee,5131,06/09/2008,09/07/2008-09/20/2008,,,,,,Retail Trade,
-Florida,Albertsons Distribution Center,Plant City,121,06/09/2008,08/09/2008-08/23/2008,,,,,,Transportation and Warehousing,
-Louisiana,Albertson's LLC,Monroe,100,06/28/2007,08/05/2007,,,,,,Supermarket and other Grocery Stores,
-Oklahoma,Albertsons,Midwest City,114,06/19/2007,,,,,5,,,
-Oklahoma,Albertsons,Tulsa,103,06/19/2007,,,,,12,,,
-Oklahoma,Albertsons,Owasso,103,06/19/2007,,,,,12,,,
-Florida,Albertsons,Panama City,75,11/01/2006,11/30/2006,,,,,,Wholesale Trade,
-New Jersey,ACME MARKETS,MARLBORO,100,09/01/2006,11/05/2006,,,,,,,
-New Jersey,ACME MARKETS,FREEHOLD,79,09/01/2006,11/05/2006,,,,,,,
-Pennsylvania,ACME Markets Inc.,Philadelphia,135,02/01/2005,04/14/2005,Plant Closure,,,,Philadelphia,,
-Maryland,"Safeway, Inc.",Lanham,78,07/09/2004,08/23/2004,Plant Closure,,,Prince George's County,,2051,
-Pennsylvania,Albertsons Inc. Acme Markets Inc. 2946,Philadelphia,70,05/01/2004,07/11/2004,Plant Closure,,,,Philadelphia,,
-Kansas,Albertsons,"Boise, ID",320,04/10/2002,,,,,4,,,
-Pennsylvania,"Acme Markets, Inc. (Store #7718)",Philadelphia,91,01/01/2002,03/07/2002,Plant Closure,,,,Philadelphia,,
-Pennsylvania,"Acme Markets, Inc. (Store #7733)",Philadelphia,70,01/01/2002,02/28/2002,Plant Closure,,,,Philadelphia,,
-Florida,"Albertson's, Inc.",Miami,231,11/29/2001,11/30/2001-01/28/2002,,,,,,Retail Trade,
+modelName,fuelType,mileage (in KM),duration (in Month),partsPrice,laborPrice,totalPrice,Service replacements (Check reference)
+Kicks,Petrol,10000,12,3735,0,3735,"AF,OF,ENG 10W30"
+Kicks,Petrol,20000,24,4384,0,4384,"AF,OF,ENG 10W30,ACF"
+Kicks,Petrol,30000,36,3735,2832,6567,"AF,OF,ENG 10W30"
+Kicks,Petrol,40000,48,4384,2832,7216,"AF,OF,ENG 10W30,ACF"
+Kicks,Petrol,50000,60,3735,2832,6567,"AF,OF,ENG 10W30"
+Kicks,Petrol,60000,72,6895,2832,9727,"AF,OF,SP,ENG 10W30,BF,ACF"
+Kicks,Petrol,70000,84,13020,2832,15852,"AF,OF,ENG 10W30"
+Kicks,Petrol,80000,96,3735,2832,6567,"AF,OF,CSC,DB,ENG 10W30,ACF"
+Kicks,Petrol,90000,108,3735,2832,6567,"AF,OF,ENG 10W30"
+Kicks,Petrol,100000,120,4384,2832,7216,"AF,OF,ENG 10W30,ACF"
+Kicks,Diesel,10000,12,3923,0,3923,"AF,OF,ENG 10W30"
+Kicks,Diesel,20000,24,8433,0,8433,"AF,OF,FF,ENG 10W30,ACF"
+Kicks,Diesel,30000,36,3923,2950,6873,"AF,OF,ENG 10W30"
+Kicks,Diesel,40000,48,8433,2950,11383,"AF,OF,FF,ENG 10W30,ACF"
+Kicks,Diesel,50000,60,3923,2950,6873,"AF,OF,ENG 10W30"
+Kicks,Diesel,60000,72,8972,2950,11922,"AF,OF,FF,ENG 10W30,BF,ACF"
+Kicks,Diesel,70000,84,3923,2950,6873,"AF,OF,ENG 10W30"
+Kicks,Diesel,80000,96,9895,2950,12845,"AF,OF,CSC,FF,ENG 10W30,ACF"
+Kicks,Diesel,90000,108,8660,2950,11610,"AF,OF,DB,ENG 10W30,TBT"
+Kicks,Diesel,100000,120,8433,2950,11383,"AF,OF,FF,ENG 10W30,ACF"
+Micra,Petrol,10000,6,2136,0,2136,"OF,ENG 10W30"
+Micra,Petrol,20000,12,2775,0,2775,"OF,ENG 10W30,ACF"
+Micra,Petrol,30000,18,2136,2596,4732,"OF,ENG 10W30"
+Micra,Petrol,40000,24,3728,2596,6324,"OF,AF,ENG 10W30,BF,ACF"
+Micra,Petrol,50000,30,2136,2596,4732,"OF,ENG 10W30"
+Micra,Petrol,60000,36,2775,2596,5371,"OF,ENG 10W30,ACF"
+Micra,Petrol,70000,42,2136,2596,4732,"OF,ENG 10W30"
+Micra,Petrol,80000,48,3728,2596,6324,"OF,AF,ENG 10W30,BF,ACF"
+Micra,Petrol,90000,54,2136,2596,4732,"OF,ENG 10W30"
+Micra,Petrol,100000,60,5241,2596,7837,"OF,SP,ENG 10W30,ACF"
+Micra,Diesel,10000,6,5717,0,5717,"OF,AF,FF,ENG 10W30"
+Micra,Diesel,20000,12,6356,0,6356,"OF,AF,FF,ENG 10W30,ACF"
+Micra,Diesel,30000,18,5717,2950,8667,"OF,AF,FF,ENG 10W30"
+Micra,Diesel,40000,24,6895,2950,9845,"OF,AF,FF,ENG 10W30,BF,ACF"
+Micra,Diesel,50000,30,5717,2950,8667,"OF,AF,FF,ENG 10W30"
+Micra,Diesel,60000,36,13903,2950,16853,"OF,AF,DB,FF,ENG 10W30,TBT,ACF"
+Micra,Diesel,70000,42,5717,2950,8667,"OF,AF,FF,ENG 10W30"
+Micra,Diesel,80000,48,6895,2950,9845,"OF,AF,FF,ENG 10W30,BF,ACF"
+Micra,Diesel,90000,54,5717,2950,8667,"OF,AF,FF,ENG 10W30"
+Micra,Diesel,100000,60,6356,2950,9306,"OF,AF,FF,ENG 10W30,ACF"
+Sunny,Petrol,10000,6,2136,0,2136,"OF,ENG 10W30"
+Sunny,Petrol,20000,12,2775,0,2775,"OF,ENG 10W30,ACF"
+Sunny,Petrol,30000,18,2136,2596,4732,"OF,ENG 10W30"
+Sunny,Petrol,40000,24,3728,2596,6324,"OF,AF,ENG 10W30,BF,ACF"
+Sunny,Petrol,50000,30,2136,2596,4732,"OF,ENG 10W30"
+Sunny,Petrol,60000,36,2775,2596,5371,"OF,ENG 10W30,ACF"
+Sunny,Petrol,70000,42,2136,2596,4732,"OF,ENG 10W30"
+Sunny,Petrol,80000,48,3728,2596,6324,"OF,AF,ENG 10W30,BF,ACF"
+Sunny,Petrol,90000,54,2136,2596,4732,"OF,ENG 10W30"
+Sunny,Petrol,100000,60,6063,2596,8659,"OF,SP,ENG 10W30,ACF"
+Sunny,Diesel,10000,6,5717,0,5717,"OF,AF,FF,ENG 10W30"
+Sunny,Diesel,20000,12,6356,0,6356,"OF,AF,FF,ENG 10W30,ACF"
+Sunny,Diesel,30000,18,5717,2596,8313,"OF,AF,FF,ENG 10W30"
+Sunny,Diesel,40000,24,6895,2596,9491,"OF,AF,FF,ENG 10W30,BF,ACF"
+Sunny,Diesel,50000,30,5717,2596,8313,"OF,AF,FF,ENG 10W30"
+Sunny,Diesel,60000,36,13903,2596,16499,"OF,AF,DB,FF,ENG 10W30,TBT,ACF"
+Sunny,Diesel,70000,42,5717,2596,8313,"OF,AF,FF,ENG 10W30"
+Sunny,Diesel,80000,48,6895,2596,9491,"OF,AF,FF,ENG 10W30,BF,ACF"
+Sunny,Diesel,90000,54,5717,2596,8313,"OF,AF,FF,ENG 10W30"
+Sunny,Diesel,100000,60,6356,2596,8952,"OF,AF,FF,ENG 10W30,ACF"
+Terrano,Petrol,10000,12,4037,0,4037,"OF,AF,ENG 10W30"
+Terrano,Petrol,20000,24,4692,0,4692,"OF,AF,ENG 10W30,ACF"
+Terrano,Petrol,30000,36,4037,2832,6869,"OF,AF,ENG 10W30"
+Terrano,Petrol,40000,48,4692,2832,7524,"OF,AF,ENG 10W30,ACF"
+Terrano,Petrol,50000,60,4037,2832,6869,"OF,AF,ENG 10W30"
+Terrano,Petrol,60000,72,6143,2832,8975,"OF,AF,SP,ENG 10W30,BF,ACF"
+Terrano,Petrol,70000,84,4037,2832,6869,"OF,AF,ENG 10W30"
+Terrano,Petrol,80000,96,24413,2832,27245,"OF,AF,DB,ENG 10W30,ACF,EC"
+Terrano,Petrol,90000,108,4037,2832,6869,"OF,AF,ENG 10W30"
+Terrano,Petrol,100000,120,4692,2832,7524,"OF,AF,ENG 10W30,ACF"
+Terrano,Diesel,10000,12,3923,0,3923,"OF,AF,ENG 10W30"
+Terrano,Diesel,20000,24,6581,0,6581,"OF,AF,FF,ENG 10W30,ACF"
+Terrano,Diesel,30000,36,3923,2950,6873,"OF,AF,ENG 10W30"
+Terrano,Diesel,40000,48,6581,2950,9531,"OF,AF,FF,ENG 10W30,ACF"
+Terrano,Diesel,50000,60,3923,2950,6873,"OF,AF,ENG 10W30"
+Terrano,Diesel,60000,72,22304,2950,25254,"OF,AF,DB,FF,ENG 10W30,BF,TBT,ACF"
+Terrano,Diesel,70000,84,3923,2950,6873,"OF,AF,ENG 10W30"
+Terrano,Diesel,80000,96,8043,2950,10993,"OF,AF,FF,ENG 10W30,ACF,EC"
+Terrano,Diesel,90000,108,3923,2950,6873,"OF,AF,ENG 10W30"
+Terrano,Diesel,100000,120,6581,2950,9531,"OF,AF,FF,ENG 10W30,ACF"
+Magnite,Petrol,2000,2,0,0,0,
+Magnite,Petrol,10000,12,2508,0,2508,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,15000,18,0,0,0,
+Magnite,Petrol,20000,24,2716,0,2716,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,30000,36,2508,2124,4632,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,40000,48,2716,2124,4840,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,50000,60,2508,2124,4632,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,60000,72,3835,2124,5959,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,70000,84,2508,2124,4632,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,80000,96,4599,2124,6723,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,90000,108,2508,2124,4632,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,100000,120,2716,2124,4840,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,2000,2,0,2124,2124,
+Magnite,Petrol,10000,12,2854,0,2854,"OF,ENG 10W30, ACF"
+Magnite,Petrol,15000,18,0,0,0,
+Magnite,Petrol,20000,24,2854,0,2854,"OF,ENG 10W30,ACF"
+Magnite,Petrol,30000,36,2854,2124,4978,"OF,ENG 10W30, ACF"
+Magnite,Petrol,40000,48,3389,2124,5513,"AF,OF,ENG 10W30,ACF"
+Magnite,Petrol,50000,60,2854,2124,4978,"OF,ENG 10W30, ACF"
+Magnite,Petrol,60000,72,3393,2124,5517,"OF,ENG 10W30, ACF"
+Magnite,Petrol,70000,84,2854,2124,4978,"OF,ENG 10W30, ACF"
+Magnite,Petrol,80000,96,5322,2124,7446,"OF,ENG 10W30, ACF"
+Magnite,Petrol,90000,108,2854,2124,4978,"OF,ENG 10W30, ACF"
+Magnite,Petrol,100000,120,7501,2124,9625,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,2000,2,0,0,0,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,10000,12,2854,0,2854,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,15000,18,0,0,0,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,20000,24,2854,0,2854,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,30000,36,2854,2124,4978,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,40000,48,3389,2124,5513,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,50000,60,2854,2124,4978,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,60000,72,3393,2124,5517,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,70000,84,2854,2124,4978,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,80000,96,5322,2124,7446,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,90000,108,2854,2124,4978,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,100000,120,7501,2124,9625,"OF,ENG 10W30, ACF,SP"
+New Magnite,Petrol,2000,2,0,0,0,
+New Magnite,Petrol,10000,12,2854,0,2854,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,15000,18,0,0,0,
+New Magnite,Petrol,20000,24,2854,0,2854,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,30000,36,2854,2124,4978,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,40000,48,3389,2124,5513,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,50000,60,3523,2124,5647,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,60000,72,3393,2124,5517,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,70000,84,2854,2124,4978,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,80000,96,5322,2124,7446,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,90000,108,2854,2124,4978,"OF,ENG 10W30, ACF"
+New Magnite,Petrol,100000,120,8170,2124,10294,"OF,ENG 10W30, ACF,SP"
+Xtrail,Petrol,10000,12,6697,0,6697,"OF,ENG 10W30, AF, DB,DBW"
+Xtrail,Petrol,20000,24,9715,0,9715,"OF,ENG 10W30,DB,DBW, ACF,BF"
+Xtrail,Petrol,30000,36,6697,4130,10827,"OF,ENG 10W30,DP,DPW"
+Xtrail,Petrol,40000,48,11593,4130,15723,"OF,ENG 10W30,DB,DBW, ACF,BF, AF"
+Xtrail,Petrol,50000,60,6697,4130,10827,"OF,ENG 10W30,DP,DPW"
+Xtrail,Petrol,60000,72,9715,4130,13845,"OF,ENG 10W30,DB,DBW, ACF,BF"
+Xtrail,Petrol,70000,84,6697,4130,10827,"OF,ENG 10W30,DP,DPW"
+Xtrail,Petrol,80000,96,11593,4130,15723,"OF,ENG 10W30,DB,DBW, ACF,BF, AF"
+Xtrail,Petrol,90000,108,6697,4130,10827,"OF,ENG 10W30,DP,DPW"
+Xtrail,Petrol,100000,120,18943,4130,23073,"OF,ENG 10W30,DB,DBW, ACF,BF, SP"
