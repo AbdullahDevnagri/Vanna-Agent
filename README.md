@@ -2,6 +2,8 @@
 
 A production-ready AI-powered SQL agent that converts natural language questions into SQL queries using Google Gemini LLM. Query your databases conversationally without writing any SQL.
 
+My Docs - https://docs.google.com/document/d/1gbYL0LVHtesMAWpD6LTqfWWsDxQFmvSodLqtmPxxRI8/edit?usp=sharing
+
 ## Features
 
 - **Natural Language Querying**: Ask questions in plain English, get SQL results automatically
