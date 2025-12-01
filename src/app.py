@@ -28,7 +28,8 @@ import asyncio
 import duckdb
 import uvicorn
 
-from chromadb.utils.embedding_functions import ONNXMiniLM_L6_V2
+#from chromadb.utils.embedding_functions import ONNXMiniLM_L6_V2
+from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 
 SCHEMA_REFERENCE = textwrap.dedent(
     f"""
@@ -104,7 +105,9 @@ latency_hook = LatencyLoggingHook()
 
 llm = GeminiLlmService(
     model="gemini-2.0-flash-lite",
-    api_key=settings.GEMINI_API_KEY
+    api_key=settings.GEMINI_API_KEY,
+    temperature=0.1,  # Low for consistent SQL gen
+    #max_tokens=512,
 )
 
 logger.info(f"Gemini LLM Service initialized with model")
@@ -153,7 +156,8 @@ db_runner = DuckDBRunner(database_path=settings.DUCKDB_PATH)
 db_tool = RunSqlTool(sql_runner=db_runner)
 
 # Stop Reloading ONNX Model
-embedding_fn = ONNXMiniLM_L6_V2() 
+#embedding_fn = ONNXMiniLM_L6_V2() 
+embedding_fn = SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
 
 # Agent memory using ChromaDB (local vector database) - Agent to learn from past interactions by storing successful question-SQL pair
 agent_memory = ChromaAgentMemory(
@@ -161,6 +165,14 @@ agent_memory = ChromaAgentMemory(
     persist_directory=settings.CHROMA_PERSIST_DIR,
     embedding_function=embedding_fn
 )
+
+async def warm_up_memory():
+    logger.info("Warming up Chroma memory...")
+    await agent_memory.save_text_memory(
+        "Warmup",
+        {"purpose": "warmup"}
+    )
+    logger.info("Chroma warmed up.")
 
 # Tools registry
 tools = ToolRegistry()
@@ -214,5 +226,6 @@ def run_server():
 if __name__ == "__main__":
     logger.info("Ingesting CSV before starting server...")
     ingest_csv()
+    asyncio.run(warm_up_memory())
     logger.info("Server starting...")
     run_server()
