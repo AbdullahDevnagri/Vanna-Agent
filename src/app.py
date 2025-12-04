@@ -19,8 +19,13 @@ from vanna.integrations.chromadb import ChromaAgentMemory
 
 from vanna.core.user import UserResolver, User, RequestContext
 
+from fastapi import FastAPI
+
 from vanna.servers.fastapi import VannaFastAPIServer
+from vanna.servers.base import ChatHandler
+from vanna.servers.fastapi.routes import register_chat_routes
 from vanna.core.system_prompt import DefaultSystemPromptBuilder
+from vanna.core.enhancer import LlmContextEnhancer
 from vanna.core.lifecycle import LifecycleHook
 from config import settings
 
@@ -33,25 +38,30 @@ from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunct
 
 SCHEMA_REFERENCE = textwrap.dedent(
     f"""
-    DATA CONTEXT:
-    - DuckDB database lives at {settings.DUCKDB_PATH}.
-    - Primary table: nissan_service_dataset (one row per scheduled service interval per model/fuel type).
+    DATA SUMMARY:
+    TABLE nissan_service_dataset (
+        modelname TEXT,
+        fueltype TEXT,           -- Petrol or Diesel
+        mileage_in_km INTEGER,   -- e.g. 80000
+        duration_in_month INTEGER,
+        partsprice DECIMAL,
+        laborprice DECIMAL,
+        totalprice DECIMAL,      -- partsprice + laborprice
+        service_replacements_check_reference TEXT -- comma separated codes
+    )
 
-    TABLE nissan_service_dataset COLUMNS:
-    - modelname (TEXT): model name such as Kicks, Micra, Terrano, Magnite, etc.
-    - fueltype (TEXT): Petrol or Diesel.
-    - mileage_in_km (INTEGER): odometer reading of the scheduled service (e.g., 80000).
-    - duration_in_month (INTEGER): months since purchase that align with the mileage.
-    - partsprice (DECIMAL): parts cost for that service.
-    - laborprice (DECIMAL): labor cost for that service.
-    - totalprice (DECIMAL): total service cost (parts + labor).
-    - service_replacements_check_reference (TEXT): comma-separated codes describing what gets replaced (AF, OF, ENG 10W30, etc.).
+    DEDUPED VIEW:
+    VIEW nissan_service_replacements_unique (
+        modelname TEXT,
+        mileage_in_km INTEGER,
+        unique_replacements TEXT  -- comma-separated, distinct & sorted
+    )
 
-    QUERY TIPS:
-    - Filter on mileage_in_km to answer questions like "service replacements at 80,000 km".
-    - Break out comma-separated replacements with string functions (e.g., SPLIT or LIKE) if needed.
-    - Aggregate by modelname and fueltype for comparisons.
-    - Use totalprice = partsprice + laborprice (already stored) when summing costs.
+    QUICK HINTS:
+    * Filter mileage_in_km for interval-specific answers.
+    * Use nissan_service_replacements_unique when a question asks
+      "per model" to avoid duplicate fuel-type rows.
+    * totalprice already stores parts + labor.
     """
 ).strip()
 
@@ -103,16 +113,23 @@ class LatencyLoggingHook(LifecycleHook):
 
 latency_hook = LatencyLoggingHook()
 
+
+class NoopLlmContextEnhancer(LlmContextEnhancer):
+    """Skip expensive memory lookups—system prompt already encodes schema."""
+
+    async def enhance_system_prompt(self, system_prompt, user_message, user):
+        return system_prompt
+
+
+llm_context_enhancer = NoopLlmContextEnhancer()
+
 llm = GeminiLlmService(
     model="gemini-2.0-flash-lite",
-    api_key=settings.GEMINI_API_KEY,
-    temperature=0.1,  # Low for consistent SQL gen
-    #max_tokens=512,
+    api_key=settings.GEMINI_API_KEY
 )
 
 logger.info(f"Gemini LLM Service initialized with model")
 
-# Connect to DuckDB and ingest CSV
 def ingest_csv():
     """Ingest CSV file into DuckDB"""
     csv_path = os.path.join(os.path.dirname(__file__), "data", "data.csv")
@@ -123,26 +140,52 @@ def ingest_csv():
         return False
     
     try:
-        # Connect to DuckDB
         con = duckdb.connect(settings.DUCKDB_PATH)
         
-        # Drop table if exists
         con.execute(f"DROP TABLE IF EXISTS {table_name}")
         
-        # Create table from CSV
         con.execute(f"""
-            CREATE TABLE {table_name} AS
-            SELECT *
+            CREATE OR REPLACE TABLE {table_name} AS
+            SELECT DISTINCT
+                modelname,
+                fueltype,
+                mileage_in_km,
+                duration_in_month,
+                partsprice,
+                laborprice,
+                totalprice,
+                TRIM(service_replacements_check_reference) AS service_replacements_check_reference
             FROM read_csv_auto(
                 '{csv_path}',
                 header=True,
                 normalize_names=True
             )
         """)
+
+        con.execute("""
+            CREATE OR REPLACE VIEW nissan_service_replacements_unique AS
+            WITH exploded AS (
+                SELECT
+                    modelname,
+                    mileage_in_km,
+                    REGEXP_REPLACE(TRIM(token), '\\s+', ' ') AS replacement
+                FROM nissan_service_dataset,
+                UNNEST(STR_SPLIT(service_replacements_check_reference, ',')) AS tokens(token)
+            )
+            SELECT
+                modelname,
+                mileage_in_km,
+                STRING_AGG(DISTINCT replacement, ', ' ORDER BY replacement) AS unique_replacements
+            FROM exploded
+            GROUP BY modelname, mileage_in_km
+        """)
         
-        # Verify
         result = con.execute(f"SELECT COUNT(*) as cnt FROM {table_name}").fetchall()
+        unique_rows = con.execute(
+            "SELECT COUNT(*) FROM (SELECT modelname, mileage_in_km FROM nissan_service_replacements_unique)"
+        ).fetchall()
         logger.info(f"✓ Table '{table_name}' created with {result[0][0]} rows")
+        logger.info("✓ View 'nissan_service_replacements_unique' ready for %s mileage/model pairs", unique_rows[0][0])
         
         con.close()
         return True
@@ -151,7 +194,6 @@ def ingest_csv():
         logger.error(f"✗ Error ingesting CSV: {e}")
         return False
 
-# Build DuckDB tool
 db_runner = DuckDBRunner(database_path=settings.DUCKDB_PATH)
 db_tool = RunSqlTool(sql_runner=db_runner)
 
@@ -198,19 +240,54 @@ agent = Agent(
     user_resolver=user_resolver,
     agent_memory=agent_memory,
     system_prompt_builder=system_prompt_builder,
-    lifecycle_hooks=[latency_hook]
+    lifecycle_hooks=[latency_hook],
+    llm_context_enhancer=llm_context_enhancer,
 )
 
-agent.max_iterations = 1 
+agent.max_iterations = 1
+agent.max_retries = 0
 agent.enhancer = None
 
 # Create FastAPI server wrapper
+_fastapi_app: FastAPI | None = None
 fastapi_server = VannaFastAPIServer(agent)
 
 
-def create_app():
+def _register_startup_events(app: FastAPI) -> None:
+    """Ensure DuckDB and Chroma are ready regardless of how the ASGI app is launched."""
+
+    @app.on_event("startup")
+    async def _startup_tasks():
+        loop = asyncio.get_running_loop()
+        await loop.run_in_executor(None, ingest_csv)
+        await warm_up_memory()
+
+
+def create_app() -> FastAPI:
     """Expose FastAPI app instance (for uvicorn/gunicorn)."""
-    return fastapi_server.create_app()
+    global _fastapi_app
+    if _fastapi_app is None:
+        _fastapi_app = fastapi_server.create_app()
+        _register_startup_events(_fastapi_app)
+    return _fastapi_app
+
+
+def register_vanna_routes(app: FastAPI, config: dict | None = None) -> None:
+    """
+    Attach Vanna chat endpoints to an existing FastAPI application.
+
+    Call this from any other service to reuse the agent without running the standalone server.
+    """
+    chat_handler = ChatHandler(agent)
+    register_chat_routes(
+        app,
+        chat_handler,
+        config
+        or {
+            "dev_mode": False,
+            "cdn_url": "https://img.vanna.ai/vanna-components.js",
+        },
+    )
 
 
 def run_server():
@@ -223,9 +300,9 @@ def run_server():
         log_level="info",
     )
 
+
 if __name__ == "__main__":
     logger.info("Ingesting CSV before starting server...")
     ingest_csv()
-    asyncio.run(warm_up_memory())
     logger.info("Server starting...")
     run_server()
