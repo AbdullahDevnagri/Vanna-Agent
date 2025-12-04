@@ -3,6 +3,7 @@
 A production-ready AI-powered SQL agent that converts natural language questions into SQL queries using Google Gemini LLM. Query your databases conversationally without writing any SQL.
 
 My Docs - https://docs.google.com/document/d/1gbYL0LVHtesMAWpD6LTqfWWsDxQFmvSodLqtmPxxRI8/edit?usp=sharing
+<img width="1188" height="401" alt="2 6 latency vanna ai rag" src="https://github.com/user-attachments/assets/5d8cfb50-a2aa-4f77-9f2b-8dfb01ea574d" />
 
 ## Features
 
